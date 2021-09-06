@@ -21,34 +21,38 @@ body {
     color: #fff;
 }
 #i0 {
-    left: 2.2ch;
+    left: 2ch;
     position: relative;
 }
 #i1 {
-    left: 1.9ch;
+    left: 2ch;
     position: relative;
 }
 #i10 {
-    left: -2.8ch;
+    left: -3ch;
     position: relative;
 }
 #i11 {
-    left: -4.8ch;
+    left: -5ch;
     position: relative;
 }
-#i1, #i3, #i0, #i10, #i11  {
-    opacity: 50%;
+#i12 {
+    left: -6ch;
+    position: relative;
 }
-#i7, #i9 {
-    opacity: 60%;
+#i1, #i0, #i10, #i11, #i12 {
+    opacity: 22%;
 }
-#i2, #i3, #i4, #i5, #i6, #i8 {
-    opacity: 70%;
+#i3, #i7, #i9 {
+    opacity: 44%;
+}
+#i2, #i4, #i5, #i6, #i8 {
+    opacity: 66%;
 }
 </style>
 <div><a id=a href="index.html">antentar</a></div>
 <script>
-a.innerHTML = [..."ırantentaruı"].map((l, i) => `<span id="i${i}">${l}</span>`).join``
+a.innerHTML = [..."ırantentaruır"].map((l, i) => `<span id="i${i}">${l}</span>`).join``
 t=0
 C = Math.cos
 setInterval(_ => a.style.fontWeight = 200+((1-C(t+=.015))*350), 16)
