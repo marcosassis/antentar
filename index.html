@@ -9,7 +9,6 @@
     padding: 0;
     font-family: "Source Code Variable", monospace;
     font-size: 42px;
-    font-weight: 200;
     text-decoration: none !important;
     color: #000;
 }
@@ -20,24 +19,18 @@ body {
 ::selection {
     color: #fff;
 }
-#i {
-    font-weight: 400;
-    right: -3ch;
+#i0 {
+    left: 2ch;
     position: relative;
 }
-#n {
-    right: -3ch;
-    position: relative;
-}
-#r {
-    right: -2ch;
+#i1 {
+    left: 2ch;
     position: relative;
 }
 </style>
-<div><a id=a href="index.html">
-<span id=i>i</span><span id=n>n</span><span id=r>r</span>a tenta</a><span>r</span>
-</div>
+<div><a id=a href="index.html">antentar</a></div>
 <script>
-t=0;
+a.innerHTML = [..."irantentar"].map((l, i) => `<span id="i${i}">${l}</span>`).join``
+t=0
 setInterval(_ => a.style.fontWeight = 200+((++t)%700), 8)
 </script>
