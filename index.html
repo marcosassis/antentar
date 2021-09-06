@@ -6,16 +6,38 @@
 <style>
 * {
     margin: auto;
+    padding: 0;
     font-family: "Source Code Variable", monospace;
-    font-size: 32px;
+    font-size: 42px;
+    font-weight: 200;
+    text-decoration: none !important;
+    color: #000;
 }
 body {
     height: 100vh;
     display: grid;
 }
+::selection {
+    color: #fff;
+}
+#i {
+    font-weight: 400;
+    right: -3ch;
+    position: relative;
+}
+#n {
+    right: -3ch;
+    position: relative;
+}
+#r {
+    right: -2ch;
+    position: relative;
+}
 </style>
-<div><pre id=a>antentar</pre></div>
+<div><a id=a href="index.html">
+<span id=i>i</span><span id=n>n</span><span id=r>r</span>a tenta</a><span>r</span>
+</div>
 <script>
 t=0;
-setInterval(_ => console.log(a.style.fontWeight = 200+((++t)%700)), 5)
+setInterval(_ => a.style.fontWeight = 200+((++t)%700), 8)
 </script>
