@@ -21,31 +21,35 @@ body {
     color: #fff;
 }
 #i0 {
-    left: 2ch;
+    left: 2.2ch;
     position: relative;
 }
 #i1 {
-    left: 2ch;
+    left: 1.9ch;
     position: relative;
 }
 #i10 {
-    left: -2.75ch;
+    left: -2.8ch;
     position: relative;
 }
-#i0, #i1, #i3, #i9, #i10 {
+#i11 {
+    left: -4.8ch;
+    position: relative;
+}
+#i1, #i3, #i0, #i10, #i11  {
     opacity: 50%;
 }
-#i7 {
-    opacity: 70%;
+#i7, #i9 {
+    opacity: 60%;
 }
-span {
-    opacity: 95%;
+#i2, #i3, #i4, #i5, #i6, #i8 {
+    opacity: 70%;
 }
 </style>
 <div><a id=a href="index.html">antentar</a></div>
 <script>
-a.innerHTML = [..."irantentaru"].map((l, i) => `<span id="i${i}">${l}</span>`).join``
+a.innerHTML = [..."ırantentaruı"].map((l, i) => `<span id="i${i}">${l}</span>`).join``
 t=0
-S = Math.sin
-setInterval(_ => a.style.fontWeight = 200+((1+S(++t/42.))*350), 16)
+C = Math.cos
+setInterval(_ => a.style.fontWeight = 200+((1-C(t+=.015))*350), 16)
 </script>
