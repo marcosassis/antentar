@@ -9,6 +9,7 @@
     padding: 0;
     font-family: "Source Code Variable", monospace;
     font-size: 42px;
+    /* font-weight: 200; */
     text-decoration: none !important;
     color: #000;
 }
@@ -27,10 +28,24 @@ body {
     left: 2ch;
     position: relative;
 }
+#i10 {
+    left: -2.75ch;
+    position: relative;
+}
+#i0, #i1, #i3, #i9, #i10 {
+    opacity: 50%;
+}
+#i7 {
+    opacity: 70%;
+}
+span {
+    opacity: 95%;
+}
 </style>
 <div><a id=a href="index.html">antentar</a></div>
 <script>
-a.innerHTML = [..."irantentar"].map((l, i) => `<span id="i${i}">${l}</span>`).join``
+a.innerHTML = [..."irantentaru"].map((l, i) => `<span id="i${i}">${l}</span>`).join``
 t=0
-setInterval(_ => a.style.fontWeight = 200+((++t)%700), 8)
+S = Math.sin
+setInterval(_ => a.style.fontWeight = 200+((1+S(++t/42.))*350), 16)
 </script>
