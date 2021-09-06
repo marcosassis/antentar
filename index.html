@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<title>a</title>
+<link rel="stylesheet" href="font/source-code-variable.css" />
+<style>
+* {
+    margin: auto;
+    font-family: "Source Code Variable", monospace;
+}
+body {
+    height: 100vh;
+    display: grid;
+}
+</style>
+<div><pre id=a>antentar</pre></div>
+<script>
+t=0;
+setInterval(_ => console.log(a.style.fontWeight = 200+((++t)%700)), 5)
+</script>
